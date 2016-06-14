@@ -1,4 +1,5 @@
-\documentclass[a4paper,twoside=false,12pt,spanish,DIV=7]{scrbook}
+\documentclass[12pt,spanish,a4paper,DIV=7,twoside=false]{scrbook}
+% fuente base 12, en Español, din A4, la medida del área de texto que prefiero, a una sola cara,
 
 % ------ Línea de 80 caracteres -----------------------------------------------
 
@@ -13,42 +14,46 @@
 % ------ ilustraciones --------------
 
 \usepackage{graphicx}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 
 % ------ fuente ---------------------
 \usepackage{Alegreya} % U otra fuente que se desee
 \addtokomafont{disposition}{\rmfamily} % Encabezados en Serif
 
+\setkomafont{caption}{\footnotesize\itshape} % -- Etiquetes fuente pequeña
+\setkomafont{captionlabel}{\usekomafont{caption}}
 
-% ------ codificación ----------------
-
-\usepackage[utf8]{inputenc} % o applemac, etc
+\usepackage{microtype}  % -- Arreglos Tipográficos
 
 
 % ------ cuadros ---------------------
 
 \usepackage{booktabs}
-
+\usepackage{tabularx}
+\usepackage{wrapfig}
 
 % ------ idioma -----------------------
 
-\usepackage[spanish]{babel}
-
-
-% ------- arreglos tipográficos -------
-
-\usepackage{microtype}
+\usepackage[spanish,es-noindentfirst]{babel}  % en Español, por favor
+% primer párrafo de cada sección sin sangría
+\usepackage[utf8]{inputenc} % codificación de caracteres 
+\usepackage[T1]{fontenc}
 
 
 % ------- referencias -----------------
 
+\usepackage[nottoc]{tocbibind}
 \usepackage{cleveref} 
 %  Documentación http://tug.ctan.org/macros/latex2e/contrib/cleveref/cleveref.pdf
 
 
 % ------- enlaces ----------------------
 
-\usepackage[colorlinks=false, pdfborder={0 0 0}, pdftitle=Sabia Vida, pdfsubject=reflexiones,pdfauthor=Miguel de Luis, pdflang=es ES]{hyperref} %enlaces debe ir al final
+\usepackage[	 colorlinks=true, pdfstartview=FitV, linkcolor=blue, 
+                 	citecolor=blue, urlcolor=blue, pdfborder={0 0 0}, 
+			   	pdftitle=Sabia Vida, pdfsubject=reflexiones,
+				pdfauthor=Miguel de Luis, pdflang=es ES]{hyperref} %enlaces debe ir al final
 
 
 % ------ meta -------------------------
@@ -57,7 +62,7 @@
 \subtitle{Reflexiones}
 \author{Miguel de Luis}
 \date{\today} % o la fecha que sea o \today
-\publishers{Editorial Imaginaria Azul}
+\publishers{Pequeña Editorial Invisible}
 
 \begin{document}
 
