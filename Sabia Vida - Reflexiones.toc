@@ -1,3 +1,6 @@
 \select@language {spanish}
 \contentsline {chapter}{\nonumberline Prefacio}{\es@scroman {iv}}{chapter*.4}
 \contentsline {chapter}{\numberline {1}\IeC {\textquestiondown }Para qu\IeC {\'e} vivir?}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}La fuente de la vida}{2}{section.1.1}
+\contentsline {chapter}{\numberline {2}Lo esencial es suficiente}{3}{chapter.2}
+\contentsline {chapter}{\nonumberline Resumen}{4}{appendix*.6}
