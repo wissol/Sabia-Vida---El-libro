@@ -1,0 +1,83 @@
+\documentclass[a4paper,twoside=false,12pt,spanish,DIV=7]{scrbook}
+
+% ------ Línea de 80 caracteres -----------------------------------------------
+
+% Este documento es un Sabia Vida de libro en komascript, preparado para
+% trabajar en español
+
+% ------ lista de tareas ------------
+
+\usepackage{todonotes}
+
+
+% ------ ilustraciones --------------
+
+\usepackage{graphicx}
+
+
+% ------ fuente ---------------------
+\usepackage{Alegreya} % U otra fuente que se desee
+\addtokomafont{disposition}{\rmfamily} % Encabezados en Serif
+
+
+% ------ codificación ----------------
+
+\usepackage[utf8]{inputenc} % o applemac, etc
+
+
+% ------ cuadros ---------------------
+
+\usepackage{booktabs}
+
+
+% ------ idioma -----------------------
+
+\usepackage[spanish]{babel}
+
+
+% ------- arreglos tipográficos -------
+
+\usepackage{microtype}
+
+
+% ------- referencias -----------------
+
+\usepackage{cleveref} 
+%  Documentación http://tug.ctan.org/macros/latex2e/contrib/cleveref/cleveref.pdf
+
+
+% ------- enlaces ----------------------
+
+\usepackage[colorlinks=false, pdfborder={0 0 0}, pdftitle=Sabia Vida, pdfsubject=reflexiones,pdfauthor=Miguel de Luis, pdflang=es ES]{hyperref} %enlaces debe ir al final
+
+
+% ------ meta -------------------------
+
+\title{Sabia Vida}
+\subtitle{Reflexiones}
+\author{Miguel de Luis}
+\date{\today} % o la fecha que sea o \today
+\publishers{Editorial Imaginaria Azul}
+
+\begin{document}
+
+
+% ------ preliminares -----------------
+
+\frontmatter
+\maketitle       % --- Inserta página de título
+\listoftodos     % --- tareas pendientes 
+\todo{borrar lista de todos}
+\tableofcontents % --- Inserta índice general
+
+\include{prefacio}
+
+% ------ contenido principal ----------
+
+\mainmatter
+
+%\include{lorem}
+
+\include{para_que_vivir}
+
+\end{document}
