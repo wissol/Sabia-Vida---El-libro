@@ -21,19 +21,20 @@
 
 % ------ tipografía ---------------------
 
-\usepackage{Alegreya} % U otra fuente que se desee
-\addtokomafont{disposition}{\rmfamily} % Encabezados en Serif
+\usepackage{Alegreya} 			% --- U otra fuente que se desee
+\addtokomafont{disposition}{\rmfamily} 	% --- Encabezados en Serif
 
-\setkomafont{caption}{\footnotesize\itshape} % -- Etiquetes fuente pequeña
-\setkomafont{captionlabel}{\usekomafont{caption}}
+\setkomafont{caption}{\footnotesize\itshape} 		% --- Etiquetas fuente pequeña
+\setkomafont{captionlabel}{\usekomafont{caption}}	% --- Idém
 
-\usepackage{microtype}  % -- Arreglos Tipográficos
+\usepackage{microtype}  % --- Arreglos Tipográficos
 
-\usepackage[autostyle,spanish=spanish]{csquotes} %-- citas
+\usepackage[autostyle,spanish=spanish]{csquotes} % --- mejora de citas
 
-\usepackage{verse} %-- poemas
+\usepackage{verse} % --- poemas
 
-\usepackage[toc]{multitoc} %-- índice general en 2 columnas
+\usepackage[toc]{multitoc} % --- índice general en 2 columnas, igual lo quito
+
 
 % ------ cuadros ---------------------
 
@@ -41,19 +42,20 @@
 \usepackage{tabularx}
 \usepackage{wrapfig}
 
+
 % ------ idioma -----------------------
 
-\usepackage[spanish,es-noindentfirst]{babel}  % en Español, por favor
-% primer párrafo de cada sección sin sangría
-\usepackage[utf8]{inputenc} % codificación de caracteres 
-\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noindentfirst]{babel}	% --- en Español, por favor
+						% --- primer párrafo de cada sección sin sangría
+						
+\usepackage[utf8]{inputenc} % --- codificación de caracteres (entrada)
+\usepackage[T1]{fontenc}    % --- codificación de salida
 
 
 % ------- referencias -----------------
 
 \usepackage[nottoc]{tocbibind}
-\usepackage{cleveref} 
-%  Documentación http://tug.ctan.org/macros/latex2e/contrib/cleveref/cleveref.pdf
+\usepackage{cleveref} 		% ---  Documentación http://tug.ctan.org/macros/latex2e/contrib/cleveref/cleveref.pdf
 
 
 % ------- enlaces ----------------------
@@ -64,7 +66,6 @@
 				pdfauthor=Miguel de Luis, pdflang=es ES]{hyperref} %enlaces debe ir al final
 
 
-
 % ------ meta -------------------------
 
 \title{Sabia Vida}
@@ -72,6 +73,9 @@
 \author{Miguel de Luis}
 \date{\today} % o la fecha que sea o \today
 \publishers{Pequeña Editorial Invisible}
+
+
+% ------ documento --------------------
 
 \begin{document}
 
@@ -92,7 +96,6 @@
 
 \mainmatter
 
-%\include{lorem}
 
 \include{para_que_vivir} % --- La fuente es la brújula
 \include{esencial}       % --- Quedándonos con lo esencial
