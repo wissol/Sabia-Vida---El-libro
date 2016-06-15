@@ -17,7 +17,8 @@
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 
-% ------ fuente ---------------------
+% ------ tipografía ---------------------
+
 \usepackage{Alegreya} % U otra fuente que se desee
 \addtokomafont{disposition}{\rmfamily} % Encabezados en Serif
 
@@ -29,6 +30,8 @@
 \usepackage[autostyle,spanish=spanish]{csquotes} %-- citas
 
 \usepackage{verse} %-- poemas
+
+\usepackage[toc]{multitoc} %-- índice general en 2 columnas
 
 % ------ cuadros ---------------------
 
@@ -76,7 +79,9 @@
 \maketitle       % --- Inserta página de título
 \listoftodos     % --- tareas pendientes 
 \todo{borrar lista de todos}
+
 \tableofcontents % --- Inserta índice general
+
 
 \include{prefacio}
 
@@ -88,6 +93,7 @@
 
 \include{para_que_vivir}
 \include{esencial}
+\include{levedad}
 
 \backmatter
 
