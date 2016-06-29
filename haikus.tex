@@ -1,0 +1,75 @@
+%\documentclass[12pt,spanish,a4paper,DIV=7,twoside=false]{scrbook}
+% fuente base 12, en Español, din A4, la medida del área de texto que prefiero, a una sola cara,
+\documentclass[10pt,spanish,a5paper,twoside=true]{book} %impresión alternativa en a5
+% ------ Línea de 80 caracteres -----------------------------------------------
+\usepackage[pass]{geometry}
+% ------ idioma -----------------------
+
+\usepackage[es-noindentfirst]{babel}	% --- primer párrafo de cada sección sin sangría
+
+% ------ tipografía ---------------------
+\usepackage[utf8]{inputenc} % --- codificación de caracteres (entrada)
+\usepackage[T1]{fontenc}
+\usepackage{Alegreya} 			% --- U otra fuente que se desee
+\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+
+%\addtokomafont{disposition}{\rmfamily} 	% --- Encabezados en Serif
+
+\usepackage{microtype}  % --- Arreglos Tipográficos
+\usepackage{setspace} % --- Doble espacio, usado en haikus
+
+% ----------- haikus ---------------------
+
+\newenvironment{haiku}
+{
+\clearpage
+\vspace*{\fill}
+\par
+\noindent
+\centering
+\huge
+\doublespacing
+} %-- órdenes dentro del environment
+{
+\vfill
+\clearpage} %-- órdenes después del haiku
+
+\title{Haikus}
+\author{Miguel de Luis}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\mainmatter
+\section*{}
+
+\begin{haiku}
+una estrofa
+
+de cinco, siete y cinco moras
+
+no es un haiku
+\end{haiku}
+
+\chapter{Amores}
+
+Lorem ipsum dolor sit amet y, oh que bien amet, porque lo que amet yo ametaba todos los días por la mañana. Dime, dime niña, sit amet lorem ipsum, porque vamos a ver lo que quiero decir es que decir lo digo. ¿No? Sí, ¿sí? ¿no? No estoy segura, bueno, ya lo pensaré\dots. Dime, dime, hablando conmigo, ¿qué es lo que me quiso decir? ¿qué quiero decir?
+
+\begin{haiku}
+descalzos viven
+
+los niños en el templo
+
+mar y arena
+\end{haiku}
+
+\begin{haiku}
+precipicio
+
+el mar arranca sus olas
+
+las piedras callan
+\end{haiku}
+
+\end{document}
